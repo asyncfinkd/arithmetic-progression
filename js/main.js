@@ -7,11 +7,16 @@ button.addEventListener("click", () => {
   let _LOOP = 0;
   let _EQUAL = 1;
   const msg = ["Please enter a input"];
-  const structure = [firstInput.value, secondInput.value];
-  if (!structure[0] && !structure[1]) {
-    while (_LOOP <= structure[0]) {
-      for (let _i = _LOOP; _i <= structure[0]; _i++) {
-        if (_LOOP == structure[0]) {
+  let structure = [firstInput.value, secondInput.value];
+  if (!structure[LENGTH] && !structure[1]) {
+    structure.map((i) => {
+      if (i != "") {
+        console.log("structure is working");
+      }
+    });
+    while (_LOOP <= structure[LENGTH]) {
+      for (let _i = _LOOP; _i <= structure[LENGTH]; _i++) {
+        if (_LOOP == structure[LENGTH]) {
           let _k = _LOOP + _EQUAL;
           console.log(msg[(LENGTH = _k - _EQUAL)]);
         }
